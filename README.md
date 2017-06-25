@@ -1,6 +1,9 @@
 # dplytab
 A simple way to create multi-level statistic tables that integrates with the dplyr syntax.
 
+## Motivation
+This is sorely missing from the `tidyverse`. There are a few multi-dimensional table creating packages and functions, notably `ftable` and the `tables` package. But I find this to be a more natural extension to the `dplyr` workflow process, and I need something that will easily `knit` to html.
+
 ## General Description
 So far its just a simple wrapper around some `tidyr` commands that reshape the data into the desired multi-table structure.
 Next step is to add/fix headers, and enhance the options....
