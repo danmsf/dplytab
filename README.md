@@ -31,4 +31,22 @@ irist %>%
           ,col_by = c("dum"))
 ```
 
-*Note: The table will be arranged in the order the variables are provided*
+And this can easily extend to multiple analysis variables as well. For example:
+
+```r
+irist %>%
+  group_by(Species, dum, dum2) %>%
+  summarise_at(vars(Sepal.Length, Sepal.Width), funs(n(),sd, mean)) %>%
+  dplytab( row_by = c("dum2", "Species")
+          ,col_by = c("dum"))
+```
+
+## General Notes
+* The table will be arranged in the order the variables are provided
+* All Coloumn and row variables need to be provided (currently)
+
+## Improvements
+Next stages include:
+* Defining a class and print method for `knitr`
+* Adding options to the order of the statistics displayed
+* Adding totals and subtotals to row and/or coloumn statistics
