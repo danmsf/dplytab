@@ -4,12 +4,9 @@ Title: Tabulates Grouped Tables
 Version: 0.1.0
 Author: Dan Feldman
 Maintainer: The package maintainer <danmsf@gmail.com>
-Description: Tabulates grouped tables, reshaping the stucture of the data for flexible reporting 
-of multi-level statistical summaries and contingency tables.
-    The reason for this package was to naturally extend the dplyr language to output the results 
-in multi-level tables that could be easily converted to html or exported to other formats. While
-functions such as `ftable` and the `tables` package offer multi-level tables, they do not easily
-print to html and do not naturaly extend the dplyr syntax.
+Description: Tabulates grouped tables, reshaping the stucture of the data for flexible reporting of multi-level statistical summaries and contingency tables.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+Imports: dplyr,
+    tidyr
